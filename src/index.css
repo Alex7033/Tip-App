@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+:root {
+  /* --tempBorder: 1px solid red; */
+  /* --tempBorder2: 1px solid blue; */
+}
+
+* {
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  background: #c5e4e8;
+}
+
+.title {
+  font-size: 24px;
+  letter-spacing: 5px;
+  margin-bottom: 5%;
+  color: #3f6264;
+}
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: var(--tempBorder);
+  flex-direction: column;
+  /* width: 100vw; */
+  /* may be a problem, check newsletter */
+  height: 90vh;
+  /* background: #c5e4e8; */
+}
+
+main {
+  display: flex;
+  /* flex-direction: column; */
+  /* here fd:column*/
+  border: var(--tempBorder);
+  width: 65%;
+  /* width 50% */
+  background: white;
+  border-radius: 20px;
+}
+p {
+  margin: 10px;
+}
+input {
+  /* display: flex; */
+  width: 95%;
+  height: 38px;
+  margin: 5px;
+  font-size: large;
+  /* background: #f3f9fb; */
+  background: #c5e4e9;
+  border: transparent 1px solid;
+  border-radius: 5px;
+  text-align: right;
+}
+.billInputContainer{
+  position: relative;
+}
+.iconDollar{
+  position: absolute;
+  left: 25px; /* Adjust the position as needed */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input:hover {
+  /* border: #5caba1; */
+  /* outline: #5caba1; */
+  /* outline: black; */
+  /* border: black; */
+  border: transparent 1px solid;
+  /* outline: transparent; */
+}
+input:focus {
+  /* border: #6dc0b5 1px solid; */
+  outline: 2px solid #6dc0b5;
+}
+input:invalid {
+  outline: 2px solid #c99685;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  border: transparent 1px solid;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  border: transparent 1px solid;
+}
+
+.userInput {
+  margin: 3%;
+  margin-right: 1.6%;
+  /* margin-left: auto; */
+  width: 45%;
+  /* margin-right: auto; */
+  border-radius: 20px;
+  border: transparent 1px solid;
+}
+
+button {
+  color: white;
+  margin: 4px;
+  cursor: pointer;
+  width: 115px;
+  height: 40px;
+  border-radius: 5px;
+  border: transparent;
+  font-size: large;
+  background: #1a484c;
+}
+button:hover {
+  color: #1a484c;
+  background: #9fe8df;
+  /* background: red; */
+}
+.btnInput {
+  height: 36px;
+  width: 108px;
+  /* border: transparent; */
+  border: none;
+  background: #f3f9fb;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: large;
+}
+.btnContainer {
+  display: block;
+}
+
+.numberPeopleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* showcase */
+
+.showcase * {
+  border: var(--tempBorder2);
+}
+
+.showcase {
+  display: block;
+  /* flex-direction: column; */
+
+  border: var(--tempBorder);
+  margin: 3%;
+  margin-left: 1.6%;
+  /* margin-left: auto; */
+  width: 45%;
+  /* margin-right: auto; */
+  border-radius: 20px;
+  background: #1a484c;
+}
+.showcase > * {
+  margin: 7%;
+}
+.showcaseFirst {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.showcaseTipText {
+  color: white;
+}
+.showcaseTipPerson {
+  color: #6a7b7b;
+}
+.showcaseTipAmount {
+  /* margin-right: 50px; */
+  color: #56c5ae;
+  font-size: xx-large;
+}
+
+.showcaseSecond {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.showcaseTotalText {
+  color: white;
+}
+.showcaseTotalPerson {
+  color: #6a7b7b;
+}
+.showcaseTotalAmount {
+  /* margin-right: 50px; */
+  color: #56c5ae;
+  font-size: xx-large;
+}
+.resetBtn {
+  width: 86%;
+  background: #29686d;
+  color: #1a484c;
+}
+/* misc */
+.textBill {
+  color: #6a7b7b;
+}
+
+.textTip {
+  color: #6a7b7b;
+}
+
+.textNumberPpl {
+  color: #6a7b7b;
+}
+.textNot0 {
+  color: #b57d6e;
+}
+.peopleInputContainer{
+  position: relative;
+  /* display: inline-block; */
+}
+.peopleInput {
+  /* outline: 2px solid #c99685; */
+  
+  /* transform: translateY(-50%); */
+  /* padding-left: 20px; */
+  /* width: 100% */
+  /* z-index: 3; */
+}
+.peopleInput:focus{
+  outline: 2px solid #6dc0b5;
+}
+.iconPeople{
+  /* z-index: 2; */
+  position: absolute;
+  left: 25px; /* Adjust the position as needed */
+  top: 50%;
+  transform: translateY(-50%);
+}
