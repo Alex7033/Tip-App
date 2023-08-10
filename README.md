@@ -4,4 +4,4 @@ It also calculates the amount per person in a given bill.
 
 It is easy to use and has a friendly UI.
 
-I made the app using React-Vite from the design shown on [frontendmentor.io](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX).
+I made the app using React-Vite from the design available at [frontendmentor.io](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX).
