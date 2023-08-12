@@ -107,7 +107,7 @@ button {
   color: white;
   margin: 4px;
   cursor: pointer;
-  width: 115px;
+  width: 100px;
   height: 40px;
   border-radius: 5px;
   border: transparent;
@@ -121,7 +121,7 @@ button:hover {
 }
 .btnInput {
   height: 36px;
-  width: 108px;
+  width: 94px;
   /* border: transparent; */
   border: none;
   background: #f3f9fb;
@@ -130,7 +130,7 @@ button:hover {
   font-size: large;
 }
 .btnContainer {
-  display: block;
+  /* display: block; */
 }
 
 .numberPeopleContainer {
