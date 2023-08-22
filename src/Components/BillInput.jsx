@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Input from "./Input";
 import Icon from "./Icon";
+import CustomButtons from "./CustomButtons";
 
 const BillInput = ({
   onData,
@@ -12,14 +13,8 @@ const BillInput = ({
   customPer,
   setCustomPer,
   billResultTip,
-  // setBillResultTip,
   billResultPerson,
-  // setBillResultPerson,
 }) => {
-  // const [resultData, setResultData] = useState({
-  //   tip: 0,
-  //   person: 0,
-  // });
   const iPerson = (
     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16">
       <path
@@ -45,7 +40,6 @@ const BillInput = ({
     e.preventDefault();
     setCustomPer(e.target.value);
   };
-  console.log("people", typeof people);
 
   return (
     <div className="userInput">
@@ -53,17 +47,11 @@ const BillInput = ({
       <form>
         <div className="billInputContainer">
           <Icon className="iconDollar" icon={iDollar} />
-          {/* <span className="iconDollar">{iconDollar}</span> */}
           <Input data={bill} setter={setBill} />
         </div>
         <p className="textTip">Select Tip %</p>
         <div className="btnContainer">
-          {[5, 10, 15, 25, 50].map((per) => (
-            <button onClick={handleButton} key={per} value={per}>
-              {per}%
-            </button>
-          ))}
-
+          <CustomButtons setter={handleButton}/>
           <Input
             placeholder="Custom"
             className="btnInput"
@@ -73,12 +61,10 @@ const BillInput = ({
         </div>
         <div className="numberPeopleContainer">
           <p className="textNumberPpl">Number of People</p>
-          {/* doesn't work properly */}
           {people === "0" && <p className="textNot0">Can't be zero</p>}
         </div>
         <div className="peopleInputContainer">
           <Icon className="iconPeople" icon={iPerson} />
-          {/* <span className="iconPeople">{iPerson}</span> */}
           <Input className="peopleInput" data={people} setter={setPeople} />
         </div>
       </form>
