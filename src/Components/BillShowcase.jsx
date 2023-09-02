@@ -1,6 +1,4 @@
 const BillShowcase = ({ data, handleReset }) => {
-  console.log(data);
-
   return (
     <div className="showcase">
       {data.map(({ tip, person }) => {

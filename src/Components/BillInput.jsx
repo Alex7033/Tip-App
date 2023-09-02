@@ -1,20 +1,38 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Input from "./Input";
 import Icon from "./Icon";
 import CustomButtons from "./CustomButtons";
+import { useCalcContext } from "../CalcContext";
 
-const BillInput = ({
-  onData,
-  perFunc,
-  bill,
-  setBill,
-  people,
-  setPeople,
-  customPer,
-  setCustomPer,
-  billResultTip,
-  billResultPerson,
-}) => {
+console.log(useCalcContext);
+
+const BillInput = (
+  {
+    // setData,
+    // perFunc,
+    // bill,
+    // setBill,
+    // people,
+    // setPeople,
+    // customPer,
+    // setCustomPer,
+    // billResultTip,
+    // billResultPerson,
+  }
+) => {
+  const {
+    setData,
+    perFunc,
+    bill,
+    setBill,
+    people,
+    setPeople,
+    customPer,
+    setCustomPer,
+    billResultTip,
+    billResultPerson,
+  } = useCalcContext();
+
   const iPerson = (
     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16">
       <path
@@ -34,7 +52,7 @@ const BillInput = ({
 
   useEffect(() => {
     perFunc(bill, customPer, people);
-  }, [people, bill, customPer, billResultPerson, billResultTip, onData]);
+  }, [people, bill, customPer, billResultPerson, billResultTip, setData]);
 
   const handleButton = (e) => {
     e.preventDefault();
@@ -51,7 +69,7 @@ const BillInput = ({
         </div>
         <p className="textTip">Select Tip %</p>
         <div className="btnContainer">
-          <CustomButtons setter={handleButton}/>
+          <CustomButtons setter={handleButton} />
           <Input
             placeholder="Custom"
             className="btnInput"

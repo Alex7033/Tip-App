@@ -1,10 +1,6 @@
 import { useState } from "react";
-import BillInput from "./Components/BillInput";
-import BillShowcase from "./Components/BillShowcase";
 
-import { CalcProvider } from "./CalcContext";
-
-function App() {
+const useBillLogic = () => {
   const defaultValue = "";
   const [bill, setBill] = useState(defaultValue);
   const [people, setPeople] = useState(defaultValue);
@@ -50,36 +46,17 @@ function App() {
       // console.log("Tip:", billResultTip, "PerPerson:", billResultPerson);
     }
   };
-
-  return (
-    <CalcProvider>
-      <div className="app">
-        <p className="title">
-          SPLI
-          <br />
-          TTER
-        </p>
-        <main>
-          <BillInput
-          // setData={setData}
-          // perFunc={perFunc}
-          // handleReset={handleReset}
-          // bill={bill}
-          // setBill={setBill}
-          // people={people}
-          // setPeople={setPeople}
-          // customPer={customPer}
-          // setCustomPer={setCustomPer}
-          // billResultTip={billResultTip}
-          // setBillResultTip={setBillResultTip}
-          // billResultPerson={billResultPerson}
-          // setBillResultPerson={setBillResultPerson}
-          />
-          <BillShowcase data={data} handleReset={handleReset} />
-        </main>
-      </div>
-    </CalcProvider>
-  );
-}
-
-export default App;
+  return {
+    setData,
+    perFunc,
+    bill,
+    setBill,
+    people,
+    setPeople,
+    customPer,
+    setCustomPer,
+    billResultTip,
+    billResultPerson,
+  };
+};
+export default useBillLogic;
