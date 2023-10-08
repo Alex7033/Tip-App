@@ -237,7 +237,6 @@ button:hover {
   transform: translateY(-50%);
 }
 
-
 @media screen and (max-width: 600px) {
   /* Styles to apply for screens narrower than 600px */
   main {
@@ -249,10 +248,14 @@ button:hover {
     /* width 50% */
     background: white;
     border-radius: 20px;
-    
   }
-  button{
+  button {
     width: 60px;
   }
-  
+  .showcaseTotalAmount {
+    font-size: large;
+  }
+  .showcaseTipAmount {
+    font-size: large;
+  }
 }
