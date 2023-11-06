@@ -16,8 +16,7 @@ body {
   font-size: 24px;
   letter-spacing: 5px;
   margin-bottom: 5%;
-  /* color: #3f6264; */
-  color: red;
+  color: #3f6264;
 }
 .app {
   display: flex;
