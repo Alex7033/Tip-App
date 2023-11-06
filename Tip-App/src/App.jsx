@@ -54,7 +54,7 @@ function App() {
   return (
     <CalcProvider>
       <div className="app">
-        <p className="title">
+        <p className="title" style={{color}}>
           SPLI
           <br />
           TTER
