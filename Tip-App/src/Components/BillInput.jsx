@@ -6,20 +6,7 @@ import { useCalcContext } from "../CalcContext";
 
 console.log(useCalcContext);
 
-const BillInput = (
-  {
-    // setData,
-    // perFunc,
-    // bill,
-    // setBill,
-    // people,
-    // setPeople,
-    // customPer,
-    // setCustomPer,
-    // billResultTip,
-    // billResultPerson,
-  }
-) => {
+const BillInput = () => {
   const {
     setData,
     perFunc,
