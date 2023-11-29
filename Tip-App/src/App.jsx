@@ -61,19 +61,6 @@ function App() {
         </p>
         <main>
           <BillInput
-          // setData={setData}
-          // perFunc={perFunc}
-          // handleReset={handleReset}
-          // bill={bill}
-          // setBill={setBill}
-          // people={people}
-          // setPeople={setPeople}
-          // customPer={customPer}
-          // setCustomPer={setCustomPer}
-          // billResultTip={billResultTip}
-          // setBillResultTip={setBillResultTip}
-          // billResultPerson={billResultPerson}
-          // setBillResultPerson={setBillResultPerson}
           />
           <BillShowcase data={data} handleReset={handleReset} />
         </main>

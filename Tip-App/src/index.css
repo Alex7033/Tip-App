@@ -10,6 +10,7 @@
 
 body {
   background: #c5e4e8;
+  /* background: black; */
 }
 
 .title {
@@ -175,7 +176,7 @@ button:hover {
 .showcaseTipAmount {
   /* margin-right: 50px; */
   color: #56c5ae;
-  font-size: xx-large;
+  font-size: large;
 }
 
 .showcaseSecond {
@@ -192,7 +193,7 @@ button:hover {
 .showcaseTotalAmount {
   /* margin-right: 50px; */
   color: #56c5ae;
-  font-size: xx-large;
+  font-size: large;
 }
 .resetBtn {
   width: 86%;
@@ -250,5 +251,6 @@ button:hover {
     background: white;
     border-radius: 20px;
   }
+  
   
 }
